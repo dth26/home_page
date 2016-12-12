@@ -53867,15 +53867,29 @@ HeaderComponent = __decorate([
     core_1.Component({
         selector: 'app-header',
         template: `
-		<header class="row">
-			<nav class="col-md-8 col-md-offset-2">
-				<ul class="nav nav-pills">
-					<li routerLinkActive="active"><a [routerLink]="['/messages']">Messenger</a></li>
-					<li routerLinkActive="active"><a [routerLink]="['/auth']">Authentication</a></li>
-				</ul>
+
+			<nav class="navbar navbar-default navbar-fixed-top">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <a class="navbar-brand" href="#" style="margin-left:50px;color: #d9d9db; font-family: 'Autour One', cursive;background-color:#db7159; color:white; ">Daniel Hui</a>
+			    </div>
+			    
+			  </div>
 			</nav>
-		</header>
-	`
+	`,
+        styles: [`
+		.navbar {
+			border-bottom:1px solid #443e3d;
+			background-color: rgba(0,3,8,.5);
+		}
+		.navbar-brand {
+			margin-left:50px; 
+			color: #d9d9db; 
+			font-family: "Autour One", cursive;
+			background-color:#db7159; 
+			color:white; 
+		}
+	`]
     }), 
     __metadata('design:paramtypes', [])
 ], HeaderComponent);
