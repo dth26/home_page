@@ -1,0 +1,19 @@
+html, body{
+	height: 100%;
+}
+
+body{
+	background-image: url('../icons/pentagon.png');
+	background-repeat: repeat;
+	font-family: "Inconsolata", Andale Mono, Monaco, Monospace;
+}
+
+body .container-fluid{
+	background-color: rgba(0,3,8, .7);
+}
+
+.fill { 
+    min-height: 100%;
+    height: 100%;
+}
+

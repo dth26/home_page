@@ -1,0 +1,32 @@
+{
+  "name": "hard",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node app/server.js",
+    "build": "webpack --config webpack.config.js --progress --profile --watch --color"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "^2.3.0",
+    "@angular/compiler": "^2.3.0",
+    "@angular/core": "^2.3.0",
+    "@angular/http": "^2.3.0",
+    "@angular/platform-browser": "^2.3.0",
+    "@angular/platform-browser-dynamic": "^2.3.0",
+    "@angular/router": "^3.3.0",
+    "@types/node": "0.0.2",
+    "angular2-router-loader": "^0.3.4",
+    "awesome-typescript-loader": "^2.2.4",
+    "core-js": "^2.4.1",
+    "debug": "^2.3.3",
+    "express": "^4.14.0",
+    "hbs": "^4.0.1",
+    "rxjs": "^5.0.0-rc.4",
+    "typescript": "^2.0.3",
+    "webpack": "^2.1.0-beta.21",
+    "zone.js": "^0.7.2"
+  }
+}
