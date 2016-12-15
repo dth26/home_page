@@ -5,12 +5,14 @@ import { HttpModule } from "@angular/http";
 import { BrowserModule } from '@angular/platform-browser';
 import { HeaderComponent } from "./shared/header.component";
 import { DeveloperComponent } from "./components/developer/developer.component"; 
+import { MainComponent } from "./components/main/main.component";
 
 @NgModule({
 	declarations: [
 		AppComponent,
 		HeaderComponent,
-		DeveloperComponent
+		DeveloperComponent,
+		MainComponent
 	],
 	imports: [
 		routing,

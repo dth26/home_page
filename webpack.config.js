@@ -15,6 +15,10 @@ var webpackConfig = {
             {
                 test: /\.ts$/,
                 loader: 'awesome-typescript-loader'
+            },
+            {
+                test: /\.scss$/,
+                loaders: ['style', 'css', 'sass']
             }
         ]
     },
