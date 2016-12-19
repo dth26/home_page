@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node app/server.js",
     "build": "webpack --config webpack.config.js --progress --profile --watch --color",
-    "sass": "node-sass public/components/ -o public/style/"
+    "sass": "node-sass public/components -o public/style/ && node-sass public/style -o public/style"
   },
   "keywords": [],
   "author": "",
