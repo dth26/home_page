@@ -53958,26 +53958,38 @@ HeaderComponent = __decorate([
     core_1.Component({
         selector: 'app-header',
         template: `
-			<nav class="navbar navbar-default navbar-fixed-top">
-			  <div class="container-fluid">
-			    <div class="navbar-header">
-			      <a class="navbar-brand" href="#" style="margin-left:50px;color: #d9d9db; font-family: 'Autour One', cursive;background-color:#db7159; color:white; ">Daniel Hui</a>
-			    </div>
-			  </div>
-			</nav>
+		<!-- <h1><span class="signature">Daniel Hui</span>|Developer</h1> -->
+			<table class="name-display">
+				<tr>
+					<td class="signature">Dan<br/>Hui</td>
+					<td>DEVELOPER</td>
+				</tr>
+			</table>
 	`,
         styles: [`
-		.navbar {
-			border-bottom:1px solid #443e3d;
-			background-color: rgba(0,3,8,.5);
-		}
-		.navbar-brand {
-			margin-left:50px; 
-			color: #d9d9db; 
-			font-family: "Autour One", cursive;
-			background-color:#db7159; 
-			color:white; 
-		}
+	
+
+	.name-display{
+		font-size: 20px;
+		margin-top: 30px;
+		margin-left: 30px;
+
+	}
+	.name-display tr td{
+		padding: 0px;
+		line-height: 24px;
+	}
+	.name-display tr td:nth-child(1){
+		padding-right: 8px;
+		font-size: 30px;
+	}
+	.name-display tr td:nth-child(2){
+		font-size: 58px;
+		border-left: 3px solid #545b5a;
+		padding-left: 8px;
+		color: #545b5a;
+		color: #667271;
+	}
 	`]
     }), 
     __metadata('design:paramtypes', [])
