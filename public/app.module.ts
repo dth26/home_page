@@ -1,6 +1,7 @@
 import { AppComponent } from "./app.component";
 import { routing } from "./app.routing";
 import { NgModule } from '@angular/core';
+import { FormsModule } from "@angular/forms";
 import { HttpModule } from "@angular/http";
 import { BrowserModule } from '@angular/platform-browser';
 import { HeaderComponent } from "./shared/header.component";
@@ -10,6 +11,9 @@ import { TagComponent } from "./components/tags/tags.component";
 import { DeveloperComponent } from "./components/developer/developer.component"; 
 import { ProjectComponent } from "./components/developer/projects/projects.component";
 
+import { DataComponent } from "./components/dataHelper/data.component";
+import { ProjectDataComponent } from "./components/dataHelper/project.component";
+
 @NgModule({
 	declarations: [
 		AppComponent,
@@ -17,12 +21,15 @@ import { ProjectComponent } from "./components/developer/projects/projects.compo
 		DeveloperComponent,
 		ProjectComponent,
 		MainComponent,
-		TagComponent
+		TagComponent,
+		ProjectDataComponent,
+		DataComponent
 	],
 	imports: [
 		routing,
 		HttpModule,
-		BrowserModule
+		BrowserModule,
+		FormsModule
 	],
 	bootstrap: [AppComponent]
 })
