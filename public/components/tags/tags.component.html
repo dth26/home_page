@@ -1,0 +1,29 @@
+
+<style>
+
+	h2{
+		color: #526077;
+		font-weight: 900;
+		display: float;
+	}
+	.tag{
+		color: #c5c8cc;
+	}
+
+</style>
+
+<br>
+<div class="center-content">
+	<table>
+		<tr>
+			<td style="padding-right:20px;"><h2>Tags:</h2></td>
+			<td>
+				<div style="width: 590px; display:float; ">
+					<span class="tag" *ngFor='let tag of tags' [ngStyle]="{fontSize: tag.font_size }">
+						{{tag.name}}
+					</span>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>

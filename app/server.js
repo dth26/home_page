@@ -1,6 +1,8 @@
 
+/* INCLUDE PRACKAGES */
 var path = require('path');
 var debug = require('debug')('node-rest:server');
+var mongoose = require('mongoose')
 
 var PORT = process.env.PORT || 3000;
 var INDEX_ROUTE = require('./routes/index.js');
@@ -8,6 +10,7 @@ var INDEX_ROUTE = require('./routes/index.js');
 
 var express = require('express');
 var app = express();
+mongoose.connect('localhost:27017/home_page')
 
 // view engine setup
 app.set('views', path.join(__dirname, '../public/views'));

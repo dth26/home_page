@@ -1,0 +1,58 @@
+html, body{
+	height: 100%;
+}
+
+body{
+	background-image: url('../icons/wood.jpg');
+	background-repeat: repeat;
+	background-size: 100%;
+	font-family: "Inconsolata", Andale Mono, Monaco, Monospace;
+
+  #outermost{
+    background-color: rgba(0,3,8, .9);
+    overflow-y: hidden;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+  }
+
+}
+
+.center-content-h{	
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fill { 
+    min-height: 100%;
+    height:auto !important; /* cross-browser */
+    height: 100%; /* cross-browser */
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.page{
+  height: 100%;
+  width: 100%;
+
+}
+
+.signature{
+  color:#afbacc;
+  font-weight: bolder;
+}
+
+.sub-menu{
+
+  li{
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    list-style-type: none;
+  }
+}

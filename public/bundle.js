@@ -39567,7 +39567,7 @@ DeveloperComponent = __decorate([
     core_1.Component({
         selector: 'developer',
         templateUrl: './components/developer/developer.component.html',
-        styleUrls: ['./components/developer/developer.component.scss']
+        styleUrls: ['./../style/developer/developer.component.css']
     }), 
     __metadata('design:paramtypes', [])
 ], DeveloperComponent);
@@ -53897,7 +53897,7 @@ const tag_model_1 = __webpack_require__(441);
 let TagComponent = class TagComponent {
     constructor() {
         this.MIN_TAG_FONT_SIZE = 13;
-        this.words = ['hockey', 'cooking', 'woodworking', 'resume', 'web development', 'shiba inu', 'projects', 'devops', 'guitar', 'music', 'movies'];
+        this.words = ['Java', 'cooking', 'woodworking', 'resume', 'web development', 'shiba inu', 'projects', 'devops', 'guitar', 'HTML', 'PNC'];
         this.tags = [];
         for (var i = 0; i < this.words.length; i++) {
             var random_font_size = this.MIN_TAG_FONT_SIZE + Math.floor(Math.random() * 7) + 'px';
@@ -53961,7 +53961,7 @@ HeaderComponent = __decorate([
 		<!-- <h1><span class="signature">Daniel Hui</span>|Developer</h1> -->
 			<table class="name-display">
 				<tr>
-					<td class="signature">Dan<br/>Hui</td>
+					<td class="signature">DAN<br/>HUI</td>
 					<td>DEVELOPER</td>
 				</tr>
 			</table>

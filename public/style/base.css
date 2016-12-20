@@ -37,11 +37,8 @@ body {
   color: #afbacc;
   font-weight: bolder; }
 
-.sub-menu {
-  border-right: 2px solid #1b1c1c;
-  width: 200px; }
-  .sub-menu li {
-    color: white;
-    margin-top: 20px;
-    font-size: 20px;
-    list-style-type: none; }
+.sub-menu li {
+  color: white;
+  margin-top: 20px;
+  font-size: 20px;
+  list-style-type: none; }
