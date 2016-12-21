@@ -10,7 +10,7 @@ import { DataComponent } from "./components/dataHelper/data.component";
 const MY_APP_ROUTES : Routes = [
 	{ path: '', pathMatch: 'full', component: MainComponent },
 	{ path: 'developer', component: DeveloperComponent, children: DEV_ROUTES },
-	{ path: 'data', component: DataComponent, children: DATA_ROUTES }
+	{ path: 'create', component: DataComponent, children: DATA_ROUTES }
 ];
 
 export const routing = RouterModule.forRoot(MY_APP_ROUTES);

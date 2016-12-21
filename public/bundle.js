@@ -47502,7 +47502,7 @@ const projects_model_1 = __webpack_require__(526);
 let ProjectDataComponent = class ProjectDataComponent {
     constructor(projectService) {
         this.projectService = projectService;
-        this.name = "trackfinity";
+        this.name = "tripplanner";
         this.lng_desc = "trackfinity is a cool music downloading website";
         this.short_desc = "trackfinity is a downloading music app";
         this.parent_component = "projects";
@@ -63704,7 +63704,7 @@ const data_component_1 = __webpack_require__(350);
 const MY_APP_ROUTES = [
     { path: '', pathMatch: 'full', component: main_component_1.MainComponent },
     { path: 'developer', component: developer_component_1.DeveloperComponent, children: developer_routes_1.DEV_ROUTES },
-    { path: 'data', component: data_component_1.DataComponent, children: data_routes_1.DATA_ROUTES }
+    { path: 'create', component: data_component_1.DataComponent, children: data_routes_1.DATA_ROUTES }
 ];
 exports.routing = router_1.RouterModule.forRoot(MY_APP_ROUTES);
 
@@ -63717,8 +63717,8 @@ exports.routing = router_1.RouterModule.forRoot(MY_APP_ROUTES);
 "use strict";
 const project_component_1 = __webpack_require__(351);
 exports.DATA_ROUTES = [
-    { path: '', redirectTo: 'projects', pathMatch: 'full' },
-    { path: 'projects', component: project_component_1.ProjectDataComponent }
+    { path: '', redirectTo: 'project', pathMatch: 'full' },
+    { path: 'project', component: project_component_1.ProjectDataComponent }
 ];
 
 
@@ -63862,12 +63862,12 @@ let ProjectService = class ProjectService {
             this simply sets up an observable and does not actually send the request
             the request is sent when a component subscribes to this observable. check out project.component.ts
         */
-        return this.http.post('http://localhost:3000/save/projects', req_body, { headers: req_header }) // return this observable
+        return this.http.post('http://localhost:3000/data/project', req_body, { headers: req_header }) // return this observable
             .map((response) => response.json()); // return response data as json
         //	.catch( (error: Response) => Observable.throw(error.json()) );
     }
     getProjects() {
-        return this.projects;
+        return this.get('http://localhost:3000/data/projects');
     }
 };
 ProjectService = __decorate([

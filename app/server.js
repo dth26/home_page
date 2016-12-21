@@ -34,7 +34,7 @@ app.use(function (req, res, next) {
     next();
 });
 
-app.use('/save', DATA_ROUTES);
+app.use('/data', DATA_ROUTES);
 app.use('/', INDEX_ROUTES);
 
 var http = require('http');
