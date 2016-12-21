@@ -1,0 +1,10 @@
+components
+----------
+component_name   # ex. developer, main
+
+
+
+subcomponents
+----------
+parent_component_id
+sub_component_name # # Skills is a sub-component of Developer

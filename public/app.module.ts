@@ -12,7 +12,7 @@ import { DeveloperComponent } from "./components/developer/developer.component";
 import { ProjectComponent } from "./components/developer/projects/projects.component";
 
 import { DataComponent } from "./components/dataHelper/data.component";
-import { ProjectDataComponent } from "./components/dataHelper/project.component";
+import { ProjectDataComponent } from "./components/dataHelper/data.project.component";
 
 @NgModule({
 	declarations: [

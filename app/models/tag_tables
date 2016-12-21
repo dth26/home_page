@@ -1,0 +1,10 @@
+table1: tag
+--------
+tag_name
+
+
+table2: tag mappings
+--------
+tag_id                  # tag_id from the tag table
+parent_component		# component that the tagged item lives in
+index_id				# we must index all pieces of data we want searchable so we can search for items on a page by that id ex. <span class="tagged" index-id="2">I wrote a excel sheet parsing application in Java at PNC</span>

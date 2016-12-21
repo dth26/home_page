@@ -4,7 +4,6 @@ import { AppComponent } from "./app.component";
 import { MainComponent } from "./components/main/main.component";
 import { DEV_ROUTES } from "./components/developer/developer.routes";
 import { DATA_ROUTES } from "./components/dataHelper/data.routes";
-import { ProjectDataComponent } from "./components/dataHelper/project.component";
 import { DataComponent } from "./components/dataHelper/data.component";
 
 const MY_APP_ROUTES : Routes = [
