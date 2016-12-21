@@ -22,6 +22,7 @@
     "@types/node": "0.0.2",
     "angular2-router-loader": "^0.3.4",
     "awesome-typescript-loader": "^2.2.4",
+    "body-parser": "^1.15.2",
     "core-js": "^2.4.1",
     "debug": "^2.3.3",
     "express": "^4.14.0",

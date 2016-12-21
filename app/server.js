@@ -2,10 +2,12 @@
 /* INCLUDE PRACKAGES */
 var path = require('path');
 var debug = require('debug')('node-rest:server');
-var mongoose = require('mongoose')
+var mongoose = require('mongoose');
+var bodyParser = require('body-parser');
 
 var PORT = process.env.PORT || 3000;
-var INDEX_ROUTE = require('./routes/index.js');
+var INDEX_ROUTES = require('./routes/index.js');
+var DATA_ROUTES = require('./routes/data.js');
 
 
 var express = require('express');
@@ -19,6 +21,9 @@ app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, '/../public')));
 console.log("__dirname = %s", path.resolve(__dirname+'/../public'));
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
+
 /*
  *	SET RESPONSE params
 */
@@ -29,7 +34,8 @@ app.use(function (req, res, next) {
     next();
 });
 
-app.use('/', INDEX_ROUTE);
+app.use('/save', DATA_ROUTES);
+app.use('/', INDEX_ROUTES);
 
 var http = require('http');
 var server = http.createServer(app);
