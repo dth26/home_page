@@ -63957,7 +63957,7 @@ HeaderComponent = __decorate([
 		font-size: 20px;
 		margin-top: 30px;
 		margin-left: 30px;
-
+		margin-bottom: 30px;
 	}
 	.name-display tr td{
 		padding: 0px;
@@ -63971,8 +63971,9 @@ HeaderComponent = __decorate([
 		font-size: 58px;
 		border-left: 3px solid #545b5a;
 		padding-left: 8px;
-		color: #545b5a;
 		color: #667271;
+		font-family: 'Orbitron', sans-serif;
+		padding-top: 12px;
 	}
 	`]
     }), 
