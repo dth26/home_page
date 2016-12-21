@@ -30,6 +30,7 @@ export class ProjectService{
 				let transformedProjects: Project[] = [];
                 for (let project of projects) {
                     transformedProjects.push(new Project(
+                    	project._id,
                     	project.name,
                     	project.lng_desc,
                     	project.short_desc,

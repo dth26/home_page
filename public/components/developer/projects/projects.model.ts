@@ -1,6 +1,7 @@
 
 
 export class Project {
+	_id: string;
 	name: string;
 	lng_desc: string;
 	short_desc: string;
@@ -10,7 +11,8 @@ export class Project {
 	img_name: string;
 	technologies: string[];
 
-	constructor(name: string, lng_desc: string, short_desc: string, parent_component: string, github_url: string, site_url: string, img_name: string, technologies: string[]) {
+	constructor(_id: string, name: string, lng_desc: string, short_desc: string, parent_component: string, github_url: string, site_url: string, img_name: string, technologies: string[]) {
+		this._id = _id;
 		this.name = name;
 		this.lng_desc = lng_desc;
 		this.short_desc = short_desc;

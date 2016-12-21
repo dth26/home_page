@@ -1,4 +1,42 @@
+$header_icon_size: 30px;
 
+
+
+.modal{
+    .modal-content  {
+        -webkit-border-radius: 0px !important;
+        -moz-border-radius: 0px !important;
+        border-radius: 0px !important; 
+    }
+
+    .tech-tag{
+      width: auto;
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      position: relative;
+      float: left;
+      color: #9fa4ad;
+      border-radius:2px;
+      margin: 5px;
+      padding:3px;
+    }
+
+    .glyphicon.glyphicon-eye-open, .git-img{
+      cursor: pointer;
+      vertical-align: middle;
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    .glyphicon.glyphicon-eye-open{
+      font-size: $header_icon_size;
+    }
+
+    .git-img{
+      height: $header_icon_size + 2;
+    }
+}
 
 .project{
     border: none;

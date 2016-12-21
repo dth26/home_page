@@ -1,6 +1,6 @@
 
 <div class="row">
-	<div class="col-xs-12 col-sm-3" *ngFor="let project of projects">
+	<div class="col-xs-12 col-sm-3" *ngFor="let project of projects; let i = index" (click)="openProjectModal(i)" >
 		<div class="center-content-h project" [ngStyle]="{'background-image':'url(icons/' + project.img_name + ')'}" >
 			<div class="title">
 				{{project.name}}
@@ -15,26 +15,36 @@
 
 
 
-<!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
+<!-- START Modal -->
+<div id="projectModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+      	<div class="row">
+      		<div class="col-sm-7"><h3 class="modal-title">{{modal_name}}</h3></div>
+      		<div class="col-sm-4">
+            <a [attr.href]="modal_site_url" [hidden]="modal_site_url == undefined || modal_site_url === null"  data-toggle="tooltip" [attr.title]="'View ' + modal_name + ' live'">
+              <span class="glyphicon glyphicon-eye-open pull-right"></span>
+            </a>
+            <a [attr.href]="modal_git_url" [hidden]="modal_git_url == undefined || modal_git_url === null" data-toggle="tooltip" [attr.title]="'View the code for ' + modal_name"> 
+              <img class="git-img pull-right" src="icons/git.png"/>
+            </a>
+          </div>
+      		<div class="col-sm-1"><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+      	</div>
+      
+        
       </div>
       <div class="modal-body">
-        <p>Some text in the modal.</p>
+        <p>{{modal_lngDesc}}</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<div *ngFor="let technology of modal_technologies" class="tech-tag">{{technology}}</div>
       </div>
     </div>
-
   </div>
 </div>
+<!-- END Modal -->

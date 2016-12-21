@@ -1,3 +1,32 @@
+.modal .modal-content {
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important; }
+
+.modal .tech-tag {
+  width: auto;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  position: relative;
+  float: left;
+  color: #9fa4ad;
+  border-radius: 2px;
+  margin: 5px;
+  padding: 3px; }
+
+.modal .glyphicon.glyphicon-eye-open, .modal .git-img {
+  cursor: pointer;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 20px; }
+
+.modal .glyphicon.glyphicon-eye-open {
+  font-size: 30px; }
+
+.modal .git-img {
+  height: 32px; }
+
 .project {
   border: none;
   height: 250px;

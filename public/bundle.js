@@ -47625,12 +47625,23 @@ let ProjectComponent = class ProjectComponent {
     constructor(projectService) {
         this.projectService = projectService;
         this.projects = [];
+        this.modal_name = '';
+        this.modal_lngDesc = '';
+        this.modal_technologies = [];
     }
     ngOnInit() {
         this.projectService.getProjects()
             .subscribe((projects) => {
             this.projects = projects;
         });
+    }
+    openProjectModal(project_index) {
+        this.modal_name = this.projects[project_index].name;
+        this.modal_lngDesc = this.projects[project_index].lng_desc;
+        this.modal_technologies = this.projects[project_index].technologies;
+        this.modal_site_url = this.projects[project_index].site_url;
+        this.modal_git_url = this.projects[project_index].github_url;
+        $("#projectModal").modal("show");
     }
 };
 ProjectComponent = __decorate([
@@ -47653,7 +47664,8 @@ var _a;
 "use strict";
 "use strict";
 class Project {
-    constructor(name, lng_desc, short_desc, parent_component, github_url, site_url, img_name, technologies) {
+    constructor(_id, name, lng_desc, short_desc, parent_component, github_url, site_url, img_name, technologies) {
+        this._id = _id;
         this.name = name;
         this.lng_desc = lng_desc;
         this.short_desc = short_desc;
@@ -47738,7 +47750,7 @@ let ProjectService = class ProjectService {
             const projects = response.json().obj;
             let transformedProjects = [];
             for (let project of projects) {
-                transformedProjects.push(new projects_model_1.Project(project.name, project.lng_desc, project.short_desc, project.parent_component, project.github_url, project.site_url, project.img_name, project.technologies));
+                transformedProjects.push(new projects_model_1.Project(project._id, project.name, project.lng_desc, project.short_desc, project.parent_component, project.github_url, project.site_url, project.img_name, project.technologies));
             }
             this.projects = transformedProjects;
             return transformedProjects;
@@ -63800,6 +63812,7 @@ const data_routes_1 = __webpack_require__(526);
 const data_component_1 = __webpack_require__(350);
 const MY_APP_ROUTES = [
     { path: '', pathMatch: 'full', component: main_component_1.MainComponent },
+    { path: 'developer/projects', component: developer_component_1.DeveloperComponent, children: developer_routes_1.DEV_ROUTES },
     { path: 'developer', component: developer_component_1.DeveloperComponent, children: developer_routes_1.DEV_ROUTES },
     { path: 'create', component: data_component_1.DataComponent, children: data_routes_1.DATA_ROUTES }
 ];
