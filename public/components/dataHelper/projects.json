@@ -1,0 +1,43 @@
+/* db.projects.insertMany(json) */
+[
+	{
+		name: "TrackFinity",
+		short_desc: "Share and send downloadable audio playlists to friends",
+		lng_desc: "This app provides an audio ripper as well as the functionality for you to create a downloadable playlist that you can send to a friend",
+		parent_component: "developer:projects",
+		github_url: "https://github.com/dth26/trackfinity",
+		site_url: "http://trackfinity.pythonanywhere.com",
+		img_name: "stars.png",
+		technologies: ["Python", "Flask", "CSS", "HTML", "AngularJS","SQLite"]
+	},
+	{
+		name: "Daniel Hui Portfolio",
+		short_desc: "A website showcasing content about my professional and personal life",
+		lng_desc: "I wanted to create a unique and robust personal website that shared parts of my professional as well as personal life. Some unique features may include a tagging system that indexes information on my site, and a Web Shell.",
+		parent_component: "developer:projects",
+		github_url: "https://github.com/dth26/home_page",
+		site_url: "http://localhost:3000",
+		img_name: "home_page.png",
+		technologies: ["NodeJS", "AngularJS", "Webpack", "TypeScript", "Express.JS", "MongoDB", "Sass"]
+	},
+	{
+		name: "TrackFinity Chrome Extension",
+		short_desc: "Chrome Extension that allows you to download audio from a webpage",
+		lng_desc: "This app provides an audio ripper as well as the functionality for you to create a downloadable playlist that you can send to a friend",
+		parent_component: "developer:projects",
+		github_url: "https://github.com/dth26/trackfinity-chrome-ext",
+		site_url: "https://chrome.google.com/webstore/detail/trackfinity/jkocgplhmccplbfbkfnocalgambmlkpp",
+		img_name: "chrome_ext.png",
+		technologies: ["Javascript", "HTML"]
+	},
+	{
+		name: "PittFashionShare",
+		short_desc: "A application that allows University of Pittsburgh students to showcase their outfits",
+		lng_desc: "This app was created by a pair of two students for a web applications class. Has the unique functionality of highlighting specific pieces of clothing in a picture uploaded by the user",
+		parent_component: "developer:projects",
+		github_url: "https://github.com/charlottechen1993/Pitt-Fashion-Share",
+		site_url: "http://pittfashionshare.appspot.com/",
+		img_name: "pittfashionshare.png",
+		technologies: ["Python", "WebApp2", "GoogleAppEngine","AngularJS","HTML","CSS"]
+	}
+]

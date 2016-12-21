@@ -47496,6 +47496,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+/*
+    ACTION: A front end interface for inserting new data into projects table
+    URL: /create/projects
+*/
 const core_1 = __webpack_require__(1);
 const project_service_1 = __webpack_require__(356);
 const projects_model_1 = __webpack_require__(354);

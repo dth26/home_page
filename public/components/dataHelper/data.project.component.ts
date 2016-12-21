@@ -1,3 +1,7 @@
+/*
+	ACTION: A front end interface for inserting new data into projects table
+	URL: /create/projects
+*/
 import { Component } from "@angular/core";
 import { ProjectService } from "../../services/project.service";
 import { Project } from "../developer/projects/projects.model";
