@@ -1,3 +1,20 @@
+.sub-menu{
+	.star {
+		color: #4c4c4c;
+		font-size: inherit;
+		visibility: hidden;
+	}
+
+
+
+	.project-listing {
+		cursor: pointer;
+	}
+
+	.project-listing:hover .star, .show-star {
+		visibility: visible;
+	}
+}
 
 
 

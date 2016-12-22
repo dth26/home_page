@@ -7,5 +7,5 @@ import { Component } from "@angular/core";
 })
 
 export class DeveloperComponent{
-	
+	selected_component: string = 'projects';	// distinguishes selected sub-menu item
 }

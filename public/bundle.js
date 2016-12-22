@@ -47592,6 +47592,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 const core_1 = __webpack_require__(1);
 let DeveloperComponent = class DeveloperComponent {
+    constructor() {
+        this.selected_component = 'projects'; // distinguishes selected sub-menu item
+    }
 };
 DeveloperComponent = __decorate([
     core_1.Component({
