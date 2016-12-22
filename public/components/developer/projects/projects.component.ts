@@ -11,6 +11,8 @@ import { Project } from "./projects.model";
 
 export class ProjectComponent{
 
+	selected_component: string = 'projects';	// distinguishes selected sub-menu item
+
 	projects: Project[] = [];
 	modal_name: string = '';
 	modal_lngDesc: string = '';

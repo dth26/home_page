@@ -4,11 +4,7 @@
   visibility: hidden; }
 
 .sub-menu .project-listing {
-  cursor: pointer;
-  color: white;
-  margin-top: 20px;
-  font-size: 20px;
-  list-style-type: none; }
+  cursor: pointer; }
 
 .sub-menu .project-listing:hover .star, .sub-menu .show-star {
   visibility: visible; }

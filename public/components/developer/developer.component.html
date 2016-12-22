@@ -6,10 +6,10 @@
 	<div class="row">
 		<div class="col-xs-12 col-sm-2" >
 			<ul class="sub-menu">
-				<li class="project-listing"><span class="star" [ngClass]="{'show-star':selected_component=='projects'}">*</span>Projects</li>
-				<li class="project-listing"><span class="star" [ngClass]="{'show-star':selected_component=='skills'}">*</span>Skills</li>
-				<li class="project-listing"><span class="star" [ngClass]="{'show-star':selected_component=='experience'}">*</span>Experience</li>
-				<li class="project-listing"><span class="star" [ngClass]="{'show-star':selected_component=='resume'}">*</span>Resume</li>
+				<li class="project-listing" [routerLink]="['/developer/projects']"><span class="star" [ngClass]="{'show-star':selected_component=='projects'}">*</span>Projects</li>
+				<li class="project-listing" [routerLink]="['/developer/skills']"><span class="star" [ngClass]="{'show-star':selected_component=='skills'}">*</span>Skills</li>
+				<li class="project-listing" [routerLink]="['/developer/experience']"><span class="star" [ngClass]="{'show-star':selected_component=='experience'}">*</span>Experience</li>
+				<li class="project-listing" [routerLink]="['/developer/resume']"><span class="star" [ngClass]="{'show-star':selected_component=='resume'}">*</span>Resume</li>
 			</ul>
 		</div>
 		<div class="col-sm-10">

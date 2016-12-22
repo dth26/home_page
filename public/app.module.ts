@@ -10,6 +10,9 @@ import { TagComponent } from "./components/tags/tags.component";
 
 import { DeveloperComponent } from "./components/developer/developer.component"; 
 import { ProjectComponent } from "./components/developer/projects/projects.component";
+import { SkillComponent } from "./components/developer/skills/skills.component";
+import { ResumeComponent } from "./components/developer/resume/resume.component";
+import { ExperienceComponent } from "./components/developer/experience/experience.component";
 
 import { DataComponent } from "./components/dataHelper/data.component";
 import { ProjectDataComponent } from "./components/dataHelper/data.project.component";
@@ -23,7 +26,10 @@ import { ProjectDataComponent } from "./components/dataHelper/data.project.compo
 		MainComponent,
 		TagComponent,
 		ProjectDataComponent,
-		DataComponent
+		DataComponent,
+		ExperienceComponent,
+		ResumeComponent,
+		SkillComponent
 	],
 	imports: [
 		routing,

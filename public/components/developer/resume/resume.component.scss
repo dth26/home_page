@@ -9,17 +9,12 @@
 
 	.project-listing {
 		cursor: pointer;
-		color: white;
-  		margin-top: 20px;
-  		font-size: 20px;
-  		list-style-type: none;
 	}
 
 	.project-listing:hover .star, .show-star {
 		visibility: visible;
 	}
 }
-
 
 
 
