@@ -47760,16 +47760,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const core_1 = __webpack_require__(1);
+//import { GlobalService } from "../../../services/globals.service";
 let SkillComponent = class SkillComponent {
-    constructor() {
-        this.selected_component = 'skills'; // distinguishes selected sub-menu item
-    }
 };
 SkillComponent = __decorate([
     core_1.Component({
         selector: 'skills',
-        templateUrl: './components/developer/skills.component.html',
-        styleUrls: ['./../style/developer/skills/skills.component.css', './../style/base.css']
+        templateUrl: './components/developer/skills/skills.component.html',
+        styleUrls: ['./../style/developer/skills/skills.component.css']
     }), 
     __metadata('design:paramtypes', [])
 ], SkillComponent);
@@ -51034,7 +51032,7 @@ exports.noop = noop;
 
 "use strict";
 "use strict";
-__webpack_require__(533);
+__webpack_require__(534);
 const platform_browser_dynamic_1 = __webpack_require__(500);
 const app_module_1 = __webpack_require__(527);
 const core_1 = __webpack_require__(1);
@@ -63829,6 +63827,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 const core_1 = __webpack_require__(1);
 let AppComponent = class AppComponent {
+    constructor() {
+    }
 };
 AppComponent = __decorate([
     core_1.Component({
@@ -63861,9 +63861,9 @@ const core_1 = __webpack_require__(1);
 const forms_1 = __webpack_require__(492);
 const http_1 = __webpack_require__(327);
 const platform_browser_1 = __webpack_require__(220);
-const header_component_1 = __webpack_require__(534);
+const header_component_1 = __webpack_require__(531);
 const main_component_1 = __webpack_require__(358);
-const tags_component_1 = __webpack_require__(532);
+const tags_component_1 = __webpack_require__(533);
 const developer_component_1 = __webpack_require__(352);
 const projects_component_1 = __webpack_require__(354);
 const skills_component_1 = __webpack_require__(357);
@@ -63955,6 +63955,59 @@ exports.DEV_ROUTES = [
 
 /***/ },
 /* 531 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+const core_1 = __webpack_require__(1);
+let HeaderComponent = class HeaderComponent {
+    constructor(rd) {
+        this.rd = rd;
+    }
+    ngAfterViewInit() {
+        console.log(document.getElementById('navbar').clientHeight);
+        //	var navbar_height = this.el.nativeElement.style.height;
+        //	console.log(navbar_height);
+    }
+};
+__decorate([
+    core_1.ViewChild('navbar'), 
+    __metadata('design:type', (typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object)
+], HeaderComponent.prototype, "el", void 0);
+HeaderComponent = __decorate([
+    core_1.Component({
+        selector: 'app-header',
+        template: `
+		
+		<div id="navbar">
+			<img src="icons/dan2.png" alt="Daniel Hui" class=""/>
+		<!--
+			<div id="col-1">DAN<br>HUI</div>
+			<div id="col-2">DEVELOPER</div>
+		-->
+		</div>
+
+		<br> <br> <br> <br> <br> <br><br> <br>
+	`,
+        styleUrls: ['./../style/shared/header.component.css']
+    }), 
+    __metadata('design:paramtypes', [(typeof (_b = typeof core_1.Renderer !== 'undefined' && core_1.Renderer) === 'function' && _b) || Object])
+], HeaderComponent);
+exports.HeaderComponent = HeaderComponent;
+var _a, _b;
+
+
+/***/ },
+/* 532 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -63970,7 +64023,7 @@ exports.Tag = Tag;
 
 
 /***/ },
-/* 532 */
+/* 533 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -63985,7 +64038,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const core_1 = __webpack_require__(1);
-const tag_model_1 = __webpack_require__(531);
+const tag_model_1 = __webpack_require__(532);
 let TagComponent = class TagComponent {
     constructor() {
         this.MIN_TAG_FONT_SIZE = 13;
@@ -64010,7 +64063,7 @@ exports.TagComponent = TagComponent;
 
 
 /***/ },
-/* 533 */
+/* 534 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -64027,68 +64080,6 @@ else {
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(250)))
-
-/***/ },
-/* 534 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-const core_1 = __webpack_require__(1);
-let HeaderComponent = class HeaderComponent {
-};
-HeaderComponent = __decorate([
-    core_1.Component({
-        selector: 'app-header',
-        template: `
-		<!-- <h1><span class="signature">Daniel Hui</span>|Developer</h1> -->
-			<table class="name-display">
-				<tr>
-					<td class="signature">DAN<br/>HUI</td>
-					<td>DEVELOPER</td>
-				</tr>
-			</table>
-	`,
-        styles: [`
-	
-
-	.name-display{
-		font-size: 20px;
-		margin-top: 30px;
-		margin-left: 30px;
-		margin-bottom: 30px;
-	}
-	.name-display tr td{
-		padding: 0px;
-		line-height: 24px;
-	}
-	.name-display tr td:nth-child(1){
-		padding-right: 8px;
-		font-size: 30px;
-	}
-	.name-display tr td:nth-child(2){
-		font-size: 58px;
-		border-left: 3px solid #545b5a;
-		padding-left: 8px;
-		color: #667271;
-		font-family: 'Orbitron', sans-serif;
-		padding-top: 12px;
-	}
-	`]
-    }), 
-    __metadata('design:paramtypes', [])
-], HeaderComponent);
-exports.HeaderComponent = HeaderComponent;
-
 
 /***/ },
 /* 535 */

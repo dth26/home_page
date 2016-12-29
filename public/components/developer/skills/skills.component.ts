@@ -1,11 +1,23 @@
 import { Component } from "@angular/core";
+//import { GlobalService } from "../../../services/globals.service";
 
 @Component({
 	selector: 'skills',
-	templateUrl: './components/developer/skills.component.html',
-	styleUrls: ['./../style/developer/skills/skills.component.css','./../style/base.css']
+	templateUrl: './components/developer/skills/skills.component.html',
+	styleUrls: ['./../style/developer/skills/skills.component.css']
 })
 
 export class SkillComponent{
-	selected_component: string = 'skills';	// distinguishes selected sub-menu item
+    /*
+    constructor(private _appGlobals: GlobalService) {
+	  this._appGlobals.selected_sub_menu.subscribe(
+	  	(val) => console.log(val)
+	  );
+	}
+
+	ngOnInit () {
+		
+	}
+	*/
+
 }

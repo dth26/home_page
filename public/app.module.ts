@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
 import { HttpModule } from "@angular/http";
 import { BrowserModule } from '@angular/platform-browser';
-import { HeaderComponent } from "./shared/header.component";
+import { HeaderComponent } from "./components/shared/header.component";
 import { MainComponent } from "./components/main/main.component";
 import { TagComponent } from "./components/tags/tags.component";
 

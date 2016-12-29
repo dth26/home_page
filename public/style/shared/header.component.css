@@ -1,0 +1,47 @@
+/*
+#navbar {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: $navbar_height;
+	width: 100%;
+	border: 1px solid white;
+	padding-left: 20px;
+
+
+
+	#col-1 {
+		height: 100%;
+		width: auto;
+		border: 1px solid yellow;
+		float: left;
+		padding-left: 5px;
+		padding-right: 5px;
+		font-size: 23px;
+		line-height: 23px;
+	}
+
+	#col-2 {
+		height: 100%;
+		font-size: $navbar_height + 10;
+		line-height: $navbar_height;
+		width: auto;
+		border: 1px solid yellow;
+		float: left;
+		padding: 0px;
+		padding-left: 5px;
+	}
+
+}
+*/
+#navbar {
+  height: 90px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7); }
+  #navbar img {
+    position: absolute;
+    top: 0px;
+    height: 90px;
+    width: auto;
+    display: block;
+    left: 10px; }
