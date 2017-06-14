@@ -5,10 +5,20 @@
 
 .sub-menu .project-listing {
   cursor: pointer;
-  color: white;
   margin-top: 20px;
   font-size: 20px;
   list-style-type: none; }
 
 .sub-menu .project-listing:hover .star, .sub-menu .show-star {
   visibility: visible; }
+
+.table-layout {
+  display: table; }
+  .table-layout .left, .table-layout .right {
+    display: table-cell; }
+  .table-layout .left {
+    float: left;
+    width: 20%; }
+  .table-layout .right {
+    float: right;
+    width: 80%; }

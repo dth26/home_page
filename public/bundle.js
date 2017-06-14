@@ -47621,15 +47621,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 const core_1 = __webpack_require__(1);
 let ExperienceComponent = class ExperienceComponent {
-    constructor() {
-        this.selected_component = 'experience'; // distinguishes selected sub-menu item
-    }
 };
 ExperienceComponent = __decorate([
     core_1.Component({
         selector: 'experience',
-        templateUrl: './components/developer/experience.component.html',
-        styleUrls: ['./../style/developer/experience/experience.component.css', './../style/base.css']
+        templateUrl: './components/developer/experience/experience.component.html',
+        styleUrls: ['./../style/developer/experience/experience.component.css']
     }), 
     __metadata('design:paramtypes', [])
 ], ExperienceComponent);
@@ -63996,7 +63993,7 @@ HeaderComponent = __decorate([
 		-->
 		</div>
 
-		<br> <br> <br> <br> <br> <br><br> <br>
+		<br> <br> <br> <br> <br> 
 	`,
         styleUrls: ['./../style/shared/header.component.css']
     }), 

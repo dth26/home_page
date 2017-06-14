@@ -12,7 +12,7 @@ import { Component, AfterViewInit, ViewChild, ElementRef, Renderer } from "@angu
 		-->
 		</div>
 
-		<br> <br> <br> <br> <br> <br><br> <br>
+		<br> <br> <br> <br> <br> 
 	`,
 	styleUrls: ['./../style/shared/header.component.css']
 })
