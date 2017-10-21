@@ -1,12 +1,26 @@
 .tag{
-	text-decoration: underline;
-	margin-right: 4px;
-	margin-left: 4px;
-	width: auto;
-	height: auto; 
-	text-align: center;
 	display: inline-block;
-	cursor: pointer;
+    padding: 5px 3px;
+  background-color: #2b2c2d;
+    color: #999;
+    border-width: 1px 2px 3px 1px;
+    border-style: solid;
+
+    border-color: #222;
+    border-color: #1c1c1c;
+    border-radius: 3px;
+  
+//    box-shadow: 1px 1px 0 rgba(0,0,0,.35);
+//-webkit-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
+//-moz-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
+//box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
+	
+    margin: 3px;
+    margin-left: 6px;
+    opacity: 1;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
 
